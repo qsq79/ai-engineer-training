@@ -8,10 +8,9 @@
 """
 
 import os
-from typing import Callable, Dict
+from typing import Callable, Dict, Any
 
 from langchain.agents.middleware import wrap_model_call
-from langchain.agents.middleware.types import ModelRequest, ModelResponse
 from langchain_openai import ChatOpenAI
 
 from .settings import get_config
@@ -107,9 +106,11 @@ class IntelligentModelRouter:
                 count += len(tool_calls)
         return count
 
-    def select_model(self, request: ModelRequest) -> str:
+    def select_model(self, request: Any) -> str:
         """根据请求状态智能选择模型"""
-        messages = request.state.get('messages', [])
+        # 尝试从请求中获取消息
+        state = getattr(request, 'state', {})
+        messages = state.get('messages', [])
 
         # 分析任务复杂度
         complexity = self._analyze_task_complexity(messages)
@@ -145,18 +146,24 @@ class IntelligentModelRouter:
 
         @wrap_model_call
         def intelligent_model_router(
-            request: ModelRequest,
-            handler: Callable[[ModelRequest], ModelResponse]
-        ) -> ModelResponse:
+            request: Any,
+            handler: Callable[[Any], Any]
+        ) -> Any:
             """智能模型路由中间件"""
             selected_model = self.select_model(request)
 
             # 调试输出
             if os.getenv('MODEL_ROUTING_DEBUG'):
-                messages = request.state.get('messages', [])
+                state = getattr(request, 'state', {})
+                messages = state.get('messages', [])
                 print(f"\n[Model Routing] Selected: {selected_model} | Messages: {len(messages)} | Tools: {self._count_tool_calls(messages)}")
 
-            return handler(request.override(model=self._get_model(selected_model)))
+            # 尝试调用 request.override 方法
+            override_request = request
+            if hasattr(request, 'override'):
+                override_request = request.override(model=self._get_model(selected_model))
+
+            return handler(override_request)
 
         return intelligent_model_router
 

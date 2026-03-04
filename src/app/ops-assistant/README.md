@@ -5,7 +5,7 @@
 ## 功能特性
 
 - 🤖 **智能 Agent**: 使用 LangChain 1.x+ 最新的 `create_agent` API 构建
-- 🔌 **微服务架构**: 通过 HTTP 调用独立的用户管理 API 服务
+- 📦 **Mock 数据支持**: 使用模拟数据进行开发测试
   - `get_user_info`: 获取用户基本信息
   - `check_login_log`: 查询用户登录日志
 - 🎯 **自动路由**: Agent 根据用户问题自动决定调用哪个工具
@@ -23,7 +23,9 @@
 ops-assistant/
 ├── config/
 │   ├── __init__.py
-│   └── settings.py       # 统一配置管理模块
+│   ├── settings.py       # 统一配置管理模块
+│   ├── model_router.py   # 智能模型路由
+│   └── tool_middleware.py # 工具错误处理中间件
 ├── core/
 │   ├── __init__.py
 │   └── agent.py          # LangChain Agent 核心实现
@@ -32,13 +34,10 @@ ops-assistant/
 │   ├── mock_data.py      # 模拟数据（用户信息、登录日志）
 │   └── ops_tools.py      # LangChain 工具定义
 ├── main.py               # 命令行入口
-├── test_basic.py         # 基础工具测试（无需 API）
-├── test_config.py        # 配置系统测试
-├── debug_test.py         # 调试测试
 ├── requirements.txt      # 项目依赖
 ├── .env.example          # 环境变量示例
 ├── README.md            # 项目说明
-├── API_REFERENCE.md     # LangChain 1.x+ API 参考说明
+├── MODEL_ROUTING.md      # 智能模型路由说明
 ├── TOOL_ERROR_HANDLING.md  # 工具错误处理说明
 └── USAGE.md             # 详细使用指南
 ```
@@ -57,35 +56,16 @@ ops-assistant/
 
 ### 前置要求
 
-本项目需要同时运行两个服务：
+本项目使用 Mock 数据进行开发和测试，无需依赖外部 API 服务。
 
-1. **ops-assistant-api**: 用户管理 REST API 服务
-2. **ops-assistant**: LangChain Agent 服务
-
-### 1. 安装 API 服务依赖
+### 1. 安装依赖
 
 ```bash
-cd /Users/quan/langchain-leanring/src/app/ops-assistant-api
+cd src/app/ops-assistant
 pip install -r requirements.txt
 ```
 
-### 2. 启动 API 服务
-
-```bash
-# 在 ops-assistant-api 目录下
-python -m app.main
-```
-
-API 将在 `http://localhost:8000` 启动。
-
-### 3. 安装 Agent 服务依赖
-
-```bash
-cd /Users/quan/langchain-leanring/src/app/ops-assistant
-pip install -r requirements.txt
-```
-
-### 4. 配置环境变量
+### 2. 配置环境变量
 
 复制 `.env.example` 为 `.env`:
 
@@ -102,11 +82,6 @@ OPENAI_API_BASE=https://api.openai.com/v1
 
 # 默认模型选择
 DEFAULT_MODEL=gpt-4o-mini
-
-# Ops Assistant API 配置
-# 用户管理微服务的地址
-OPS_API_BASE_URL=http://localhost:8000
-OPS_API_TIMEOUT=30
 
 # 工具错误处理日志配置（可选）
 # TOOL_LOG_LEVEL=DEBUG   # 可选: DEBUG, INFO, WARNING, ERROR
@@ -270,26 +245,6 @@ config = get_config()
 config = reload_config()
 ```
 
-## 测试
-
-### 工具测试（无需 API）
-
-```bash
-python test_basic.py
-```
-
-### 配置系统测试
-
-```bash
-python test_config.py
-```
-
-### 调试测试
-
-```bash
-python debug_test.py
-```
-
 ## 测试数据说明
 
 项目包含以下模拟用户：
@@ -409,10 +364,10 @@ Thank you for using Ops Assistant. Goodbye!
    - 重启服务
    - 检查资源使用情况
 
-2. **扩展 API 服务**:
-   - 在 `ops-assistant-api` 中添加更多端点
-   - 替换 mock 数据为真实数据库连接
-   - 添加用户认证和授权
+2. **连接真实数据源**:
+   - 将 `tools/mock_data.py` 中的 Mock 数据替换为真实的数据库查询
+   - 添加数据库连接配置
+   - 实现数据持久化
 
 3. **添加对话历史**: 使用 thread_id 保持多轮对话上下文
 

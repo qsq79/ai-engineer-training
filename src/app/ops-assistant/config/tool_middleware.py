@@ -9,10 +9,9 @@ import os
 import logging
 import traceback
 from datetime import datetime
-from typing import Callable
+from typing import Callable, Any
 
 from langchain.agents.middleware import wrap_tool_call
-from langchain.agents.middleware.types import ToolRequest, ToolResponse
 from langchain.messages import ToolMessage
 
 from .settings import get_config
@@ -97,9 +96,9 @@ class ToolErrorHandler:
 
         @wrap_tool_call
         def tool_error_handler(
-            request: ToolRequest,
-            handler: Callable[[ToolRequest], ToolResponse]
-        ) -> ToolResponse:
+            request: Any,
+            handler: Callable[[Any], Any]
+        ) -> Any:
             """
             工具调用错误处理中间件
 
@@ -109,8 +108,11 @@ class ToolErrorHandler:
             3. 返回用户友好的错误消息给 LLM
             4. 记录详细的错误日志用于排查
             """
-            tool_name = request.tool_name
-            tool_input = request.tool_input
+            # 尝试从请求中获取工具信息
+            tool_name = getattr(request, 'tool_name', 'unknown')
+            tool_input = getattr(request, 'tool_input', {})
+            tool_call = getattr(request, 'tool_call', {})
+            
             start_time = datetime.now()
 
             # 记录工具调用开始
@@ -138,10 +140,17 @@ class ToolErrorHandler:
                 # 返回用户友好的错误消息给模型
                 error_message = self._format_error_message(tool_name, e)
 
-                return ToolMessage(
-                    content=error_message,
-                    tool_call_id=request.tool_call["id"]
-                )
+                # 尝试获取 tool_call_id
+                tool_call_id = tool_call.get("id") if isinstance(tool_call, dict) else None
+                
+                if tool_call_id:
+                    return ToolMessage(
+                        content=error_message,
+                        tool_call_id=tool_call_id
+                    )
+                else:
+                    # 如果无法创建 ToolMessage，返回字典形式的错误响应
+                    return {"error": error_message, "tool_name": tool_name}
 
         return tool_error_handler
 

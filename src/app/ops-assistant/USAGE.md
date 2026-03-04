@@ -22,6 +22,7 @@ cp .env.example .env
 #### 方式一：交互式聊天（推荐）
 
 ```bash
+cd src/app/ops-assistant
 python main.py
 ```
 
@@ -35,6 +36,8 @@ python main.py
 #### 方式二：单次查询
 
 ```bash
+cd src/app/ops-assistant
+
 # 查询问题
 python main.py --query "用户 bob 登录失败的原因是什么？"
 
@@ -81,18 +84,17 @@ python main.py --user bob --log
 - 显示 eve 的登录记录
 - 其中一次失败原因是 "IP地址不在白名单中"
 
-## 无需 API 测试工具
+## 测试说明
 
-如果只想测试工具功能（不消耗 API 配额），可以运行：
+本项目的工具使用 Mock 数据（在 `tools/mock_data.py` 中定义），因此可以直接测试而无需连接真实的数据源。Mock 数据包含了几种典型场景的用户和登录日志数据，用于验证 Agent 的工具调用和问题分析能力。
 
-```bash
-python test_basic.py
-```
+测试场景包括：
+- 正常用户查询（alice）
+- 账号锁定分析（bob）
+- 账号过期检查（david）
+- IP 白名单问题（eve）
 
-这将测试所有工具的基本功能，包括：
-- get_user_info 工具
-- check_login_log 工具
-- 各种边界情况（用户不存在等）
+这些测试用例可以帮助验证 Agent 能够正确识别问题并调用相应的工具进行分析。
 
 ## 可用的测试用户
 
