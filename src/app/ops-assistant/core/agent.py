@@ -13,7 +13,15 @@ from langchain.agents import create_agent
 from langchain_openai import ChatOpenAI
 
 from tools import TOOLS
-from config import get_config, AppConfig, create_model_router_middleware, create_tool_error_middleware
+from config import (
+    get_config, AppConfig,
+    create_model_router_middleware, create_tool_error_middleware,
+    create_tool_retry_middleware, create_model_retry_middleware,
+    create_tool_monitoring_middleware, create_model_monitoring_middleware,
+    create_tool_rate_limit_middleware, create_model_rate_limit_middleware,
+    RetryConfig,
+    get_metrics_collector,
+)
 
 
 class OpsAssistantAgent:
@@ -27,6 +35,10 @@ class OpsAssistantAgent:
         config: Optional[AppConfig] = None,
         enable_smart_routing: bool = True,
         enable_tool_error_handler: bool = True,
+        enable_retry: bool = False,
+        retry_config: Optional[RetryConfig] = None,
+        enable_monitoring: bool = True,
+        enable_rate_limit: bool = False,
         **kwargs
     ):
         """
@@ -39,6 +51,10 @@ class OpsAssistantAgent:
             config: 配置对象，如果为 None 则自动加载
             enable_smart_routing: 是否启用智能模型路由（默认 True）
             enable_tool_error_handler: 是否启用工具错误处理中间件（默认 True）
+            enable_retry: 是否启用重试中间件（默认 False）
+            retry_config: 重试配置（可选）
+            enable_monitoring: 是否启用监控中间件（默认 True）
+            enable_rate_limit: 是否启用限流中间件（默认 False）
             **kwargs: 其他传递给 ChatOpenAI 的参数
         """
         # 加载配置
@@ -60,11 +76,12 @@ class OpsAssistantAgent:
         # 保存当前使用的模型配置
         self.model_config = model_config
 
-        # 保存智能路由开关
+        # 保存各种中间件开关
         self.enable_smart_routing = enable_smart_routing and self.config.enable_model_routing
-
-        # 保存工具错误处理开关
         self.enable_tool_error_handler = enable_tool_error_handler
+        self.enable_retry = enable_retry
+        self.enable_monitoring = enable_monitoring
+        self.enable_rate_limit = enable_rate_limit
 
         # 初始化 LLM
         llm_params = model_config.to_dict()
@@ -74,15 +91,34 @@ class OpsAssistantAgent:
         self.llm = ChatOpenAI(**llm_params)
 
         # 准备中间件列表
-        middleware = []
+        model_middleware = []
+        tool_middleware = []
 
         # 添加智能模型路由中间件
         if self.enable_smart_routing:
-            middleware.append(create_model_router_middleware())
+            model_middleware.append(create_model_router_middleware())
 
-        # 添加工具错误处理中间件
+        # 添加重试中间件
+        if self.enable_retry:
+            model_middleware.append(create_model_retry_middleware(retry_config))
+            tool_middleware.append(create_tool_retry_middleware(retry_config))
+
+        # 添加监控中间件
+        if self.enable_monitoring:
+            model_middleware.append(create_model_monitoring_middleware())
+            tool_middleware.append(create_tool_monitoring_middleware())
+
+        # 添加限流中间件
+        if self.enable_rate_limit:
+            model_middleware.append(create_model_rate_limit_middleware())
+            tool_middleware.append(create_tool_rate_limit_middleware())
+
+        # 添加工具错误处理中间件（最后执行，确保捕获所有错误）
         if self.enable_tool_error_handler:
-            middleware.append(create_tool_error_middleware())
+            tool_middleware.append(create_tool_error_middleware())
+
+        # 合并中间件
+        middleware = model_middleware + tool_middleware
 
         # 创建 Agent
         self.agent = create_agent(
@@ -240,6 +276,61 @@ Please respond to user questions in a friendly, professional tone.
                 system_prompt=self._get_system_prompt(),
             )
             self.enable_smart_routing = False
+
+    def get_metrics(self) -> dict:
+        """
+        获取监控指标
+
+        Returns:
+            包含工具和模型调用统计的字典
+        """
+        if not self.enable_monitoring:
+            return {"monitoring": "disabled"}
+
+        collector = get_metrics_collector()
+        
+        return {
+            "tool_stats": collector.get_all_tool_stats(),
+            "model_stats": collector.get_all_model_stats(),
+            "recent_calls": len(collector.get_recent_history(minutes=5))
+        }
+
+    def print_metrics(self):
+        """打印监控指标"""
+        metrics = self.get_metrics()
+        
+        if "monitoring" in metrics and metrics["monitoring"] == "disabled":
+            print("Monitoring is disabled")
+            return
+
+        print("\n" + "=" * 60)
+        print("Monitoring Metrics")
+        print("=" * 60)
+        
+        # 工具统计
+        print("\nTool Statistics:")
+        for tool_name, stats in metrics["tool_stats"].items():
+            if stats:
+                print(f"\n  {tool_name}:")
+                print(f"    Calls: {stats.get('call_count', 0)}")
+                print(f"    Success Rate: {stats.get('success_rate', 0) * 100:.2f}%")
+                print(f"    Avg Duration: {stats.get('avg_duration_ms', 0):.2f}ms")
+                print(f"    P95 Duration: {stats.get('p95_duration_ms', 0):.2f}ms")
+                print(f"    P99 Duration: {stats.get('p99_duration_ms', 0):.2f}ms")
+        
+        # 模型统计
+        print("\nModel Statistics:")
+        for model_name, stats in metrics["model_stats"].items():
+            if stats:
+                print(f"\n  {model_name}:")
+                print(f"    Calls: {stats.get('call_count', 0)}")
+                print(f"    Success Rate: {stats.get('success_rate', 0) * 100:.2f}%")
+                print(f"    Avg Duration: {stats.get('avg_duration_ms', 0):.2f}ms")
+                print(f"    P95 Duration: {stats.get('p95_duration_ms', 0):.2f}ms")
+                print(f"    P99 Duration: {stats.get('p99_duration_ms', 0):.2f}ms")
+        
+        print(f"\nRecent Calls (last 5 minutes): {metrics['recent_calls']}")
+        print("=" * 60 + "\n")
 
     def chat(self):
         """启动交互式聊天模式"""

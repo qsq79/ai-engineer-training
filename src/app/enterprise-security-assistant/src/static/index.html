@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业级安全智能助手</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>安全智能助手</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item active" data-page="dashboard">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>仪表盘</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="query">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-search"></i>
+                        <span>智能查询</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="agents">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-robot"></i>
+                        <span>Agent管理</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="workflows">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>工作流管理</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="sessions">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-comments"></i>
+                        <span>会话管理</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="compliance">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-check-circle"></i>
+                        <span>合规检查</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="stats">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-line"></i>
+                        <span>统计分析</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="admin">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>系统管理</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <div class="user-name">管理员</div>
+                    <div class="user-role">系统管理员</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- 顶部栏 -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <h1 class="page-title" id="pageTitle">仪表盘</h1>
+            </div>
+            <div class="topbar-right">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="notifications">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                </div>
+                <div class="user-menu">
+                    <button class="user-menu-btn">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- 内容区域 -->
+        <div class="content-wrapper">
+            <!-- 仪表盘页面 -->
+            <div class="page active" id="dashboardPage">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>总查询数</h3>
+                            <p class="stat-value">15,234</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 12.5%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Agent调用</h3>
+                            <p class="stat-value">856</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 8.3%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>工作流执行</h3>
+                            <p class="stat-value">2,345</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 15.2%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>本月成本</h3>
+                            <p class="stat-value">$234.56</p>
+                            <p class="stat-change negative">
+                                <i class="fas fa-arrow-down"></i> 3.2%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-charts">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>查询趋势</h3>
+                            <div class="chart-actions">
+                                <button class="btn btn-sm">7天</button>
+                                <button class="btn btn-sm active">30天</button>
+                                <button class="btn btn-sm">90天</button>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <canvas id="queryChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>Agent使用分布</h3>
+                        </div>
+                        <div class="chart-content">
+                            <canvas id="agentChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-tables">
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h3>最近查询</h3>
+                            <button class="btn btn-sm">查看全部</button>
+                        </div>
+                        <div class="table-content">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>查询内容</th>
+                                        <th>意图</th>
+                                        <th>用户</th>
+                                        <th>时间</th>
+                                        <th>状态</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>为什么最近的安全评分下降了？</td>
+                                        <td><span class="badge badge-info">评分解读</span></td>
+                                        <td>张三</td>
+                                        <td>2分钟前</td>
+                                        <td><span class="status status-success">成功</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>查询本周的威胁情报</td>
+                                        <td><span class="badge badge-warning">威胁分析</span></td>
+                                        <td>李四</td>
+                                        <td>5分钟前</td>
+                                        <td><span class="status status-success">成功</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>执行等保2.0合规检查</td>
+                                        <td><span class="badge badge-success">合规检查</span></td>
+                                        <td>王五</td>
+                                        <td>10分钟前</td>
+                                        <td><span class="status status-pending">进行中</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智能查询页面 -->
+            <div class="page" id="queryPage">
+                <div class="query-container">
+                    <div class="query-header">
+                        <h2>智能查询</h2>
+                        <p class="query-description">输入您的问题，AI助手将自动识别意图并提供答案</p>
+                    </div>
+                    
+                    <div class="query-box">
+                        <div class="query-input-wrapper">
+                            <textarea id="queryInput" placeholder="请输入您的问题，例如：为什么最近的安全评分下降了？" rows="4"></textarea>
+                            <div class="query-actions">
+                                <button class="btn btn-secondary" id="clearQuery">
+                                    <i class="fas fa-times"></i> 清空
+                                </button>
+                                <button class="btn btn-primary" id="submitQuery">
+                                    <i class="fas fa-paper-plane"></i> 提交查询
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="query-examples">
+                        <h3>示例问题</h3>
+                        <div class="example-cards">
+                            <div class="example-card" data-query="为什么最近的安全评分下降了？">
+                                <i class="fas fa-chart-line"></i>
+                                <span>为什么最近的安全评分下降了？</span>
+                            </div>
+                            <div class="example-card" data-query="查询本周的威胁情报">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>查询本周的威胁情报</span>
+                            </div>
+                            <div class="example-card" data-query="执行等保2.0合规检查">
+                                <i class="fas fa-check-circle"></i>
+                                <span>执行等保2.0合规检查</span>
+                            </div>
+                            <div class="example-card" data-query="分析最近的攻击行为">
+                                <i class="fas fa-search"></i>
+                                <span>分析最近的攻击行为</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="query-result" id="queryResult" style="display: none;">
+                        <div class="result-header">
+                            <h3>查询结果</h3>
+                            <button class="btn btn-sm" id="closeResult">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="result-content" id="resultContent">
+                            <!-- 动态内容 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agent管理页面 -->
+            <div class="page" id="agentsPage">
+                <div class="page-header">
+                    <h2>Agent管理</h2>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> 添加Agent
+                    </button>
+                </div>
+
+                <div class="agents-grid">
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h3>意图识别Agent</h3>
+                                <p class="agent-description">识别用户查询意图，提取关键参数</p>
+                            </div>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">调用次数</span>
+                                <span class="stat-value">5,678</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">成功率</span>
+                                <span class="stat-value">98.5%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">平均响应时间</span>
+                                <span class="stat-value">0.23s</span>
+                            </div>
+                        </div>
+                        <div class="agent-actions">
+                            <button class="btn btn-sm btn-primary">测试</button>
+                            <button class="btn btn-sm btn-secondary">配置</button>
+                            <button class="btn btn-sm btn-secondary">日志</button>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h3>日志查询Agent</h3>
+                                <p class="agent-description">查询和分析日志数据，生成SQL和解释</p>
+                            </div>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">调用次数</span>
+                                <span class="stat-value">3,456</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">成功率</span>
+                                <span class="stat-value">97.2%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">平均响应时间</span>
+                                <span class="stat-value">1.45s</span>
+                            </div>
+                        </div>
+                        <div class="agent-actions">
+                            <button class="btn btn-sm btn-primary">测试</button>
+                            <button class="btn btn-sm btn-secondary">配置</button>
+                            <button class="btn btn-sm btn-secondary">日志</button>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h3>评分解读Agent</h3>
+                                <p class="agent-description">解读安全评分，解释评分逻辑，提供改进建议</p>
+                            </div>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">调用次数</span>
+                                <span class="stat-value">2,345</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">成功率</span>
+                                <span class="stat-value">96.8%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">平均响应时间</span>
+                                <span class="stat-value">0.87s</span>
+                            </div>
+                        </div>
+                        <div class="agent-actions">
+                            <button class="btn btn-sm btn-primary">测试</button>
+                            <button class="btn btn-sm btn-secondary">配置</button>
+                            <button class="btn btn-sm btn-secondary">日志</button>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h3>威胁分析Agent</h3>
+                                <p class="agent-description">分析威胁情报，识别潜在威胁，构建攻击图</p>
+                            </div>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">调用次数</span>
+                                <span class="stat-value">2,345</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">成功率</span>
+                                <span class="stat-value">97.5%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">平均响应时间</span>
+                                <span class="stat-value">1.23s</span>
+                            </div>
+                        </div>
+                        <div class="agent-actions">
+                            <button class="btn btn-sm btn-primary">测试</button>
+                            <button class="btn btn-sm btn-secondary">配置</button>
+                            <button class="btn btn-sm btn-secondary">日志</button>
+                        </div>
+                    </div>
+
+                    <div class="agent-card">
+                        <div class="agent-header">
+                            <div class="agent-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="agent-info">
+                                <h3>工作流协调Agent</h3>
+                                <p class="agent-description">协调多Agent协作，管理任务调度和结果聚合</p>
+                            </div>
+                        </div>
+                        <div class="agent-stats">
+                            <div class="stat">
+                                <span class="stat-label">调用次数</span>
+                                <span class="stat-value">1,234</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">成功率</span>
+                                <span class="stat-value">95.6%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">平均响应时间</span>
+                                <span class="stat-value">2.34s</span>
+                            </div>
+                        </div>
+                        <div class="agent-actions">
+                            <button class="btn btn-sm btn-primary">测试</button>
+                            <button class="btn btn-sm btn-secondary">配置</button>
+                            <button class="btn btn-sm btn-secondary">日志</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工作流管理页面 -->
+            <div class="page" id="workflowsPage">
+                <div class="page-header">
+                    <h2>工作流管理</h2>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> 创建工作流
+                    </button>
+                </div>
+
+                <div class="workflows-table">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>工作流ID</th>
+                                <th>名称</th>
+                                <th>状态</th>
+                                <th>任务数</th>
+                                <th>执行时间</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WF-001</td>
+                                <td>安全扫描工作流</td>
+                                <td><span class="status status-success">已完成</span></td>
+                                <td>5</td>
+                                <td>2.34s</td>
+                                <td>2026-03-14 10:30:00</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">查看</button>
+                                    <button class="btn btn-sm btn-secondary">重新执行</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>WF-002</td>
+                                <td>威胁分析工作流</td>
+                                <td><span class="status status-running">运行中</span></td>
+                                <td>8</td>
+                                <td>-</td>
+                                <td>2026-03-14 11:00:00</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">查看</button>
+                                    <button class="btn btn-sm btn-danger">停止</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>WF-003</td>
+                                <td>合规检查工作流</td>
+                                <td><span class="status status-failed">失败</span></td>
+                                <td>3</td>
+                                <td>5.67s</td>
+                                <td>2026-03-14 09:15:00</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">查看</button>
+                                    <button class="btn btn-sm btn-secondary">重新执行</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 会话管理页面 -->
+            <div class="page" id="sessionsPage">
+                <div class="page-header">
+                    <h2>会话管理</h2>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> 创建会话
+                    </button>
+                </div>
+
+                <div class="sessions-table">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>会话ID</th>
+                                <th>标题</th>
+                                <th>用户</th>
+                                <th>消息数</th>
+                                <th>创建时间</th>
+                                <th>更新时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SESSION-001</td>
+                                <td>安全评分分析</td>
+                                <td>张三</td>
+                                <td>12</td>
+                                <td>2026-03-14 10:00:00</td>
+                                <td>2026-03-14 10:30:00</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">查看</button>
+                                    <button class="btn btn-sm btn-secondary">编辑</button>
+                                    <button class="btn btn-sm btn-danger">删除</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SESSION-002</td>
+                                <td>威胁情报查询</td>
+                                <td>李四</td>
+                                <td>8</td>
+                                <td>2026-03-14 09:00:00</td>
+                                <td>2026-03-14 09:45:00</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">查看</button>
+                                    <button class="btn btn-sm btn-secondary">编辑</button>
+                                    <button class="btn btn-sm btn-danger">删除</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 合规检查页面 -->
+            <div class="page" id="compliancePage">
+                <div class="page-header">
+                    <h2>合规检查</h2>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> 执行检查
+                    </button>
+                </div>
+
+                <div class="compliance-cards">
+                    <div class="compliance-card">
+                        <div class="compliance-header">
+                            <h3>等保2.0三级检查</h3>
+                            <span class="badge badge-success">通过</span>
+                        </div>
+                        <div class="compliance-score">
+                            <div class="score">85.5</div>
+                            <div class="score-label">总分</div>
+                        </div>
+                        <div class="compliance-details">
+                            <div class="detail-item">
+                                <span class="label">通过项</span>
+                                <span class="value success">86</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">失败项</span>
+                                <span class="value danger">14</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">检查时间</span>
+                                <span class="value">2026-03-14 10:00:00</span>
+                            </div>
+                        </div>
+                        <div class="compliance-actions">
+                            <button class="btn btn-sm btn-primary">查看报告</button>
+                            <button class="btn btn-sm btn-secondary">重新检查</button>
+                        </div>
+                    </div>
+
+                    <div class="compliance-card">
+                        <div class="compliance-header">
+                            <h3>ISO27001检查</h3>
+                            <span class="badge badge-warning">部分通过</span>
+                        </div>
+                        <div class="compliance-score">
+                            <div class="score">78.2</div>
+                            <div class="score-label">总分</div>
+                        </div>
+                        <div class="compliance-details">
+                            <div class="detail-item">
+                                <span class="label">通过项</span>
+                                <span class="value success">72</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">失败项</span>
+                                <span class="value danger">20</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">检查时间</span>
+                                <span class="value">2026-03-13 15:30:00</span>
+                            </div>
+                        </div>
+                        <div class="compliance-actions">
+                            <button class="btn btn-sm btn-primary">查看报告</button>
+                            <button class="btn btn-sm btn-secondary">重新检查</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 统计分析页面 -->
+            <div class="page" id="statsPage">
+                <div class="page-header">
+                    <h2>统计分析</h2>
+                    <div class="stats-filters">
+                        <select class="form-control">
+                            <option>最近7天</option>
+                            <option>最近30天</option>
+                            <option>最近90天</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="stats-overview">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>总查询数</h3>
+                            <p class="stat-value">15,234</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 12.5%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Agent调用</h3>
+                            <p class="stat-value">8,567</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 8.3%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Token使用</h3>
+                            <p class="stat-value">1,567,890</p>
+                            <p class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i> 15.2%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>总成本</h3>
+                            <p class="stat-value">$234.56</p>
+                            <p class="stat-change negative">
+                                <i class="fas fa-arrow-down"></i> 3.2%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-charts">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>查询趋势</h3>
+                        </div>
+                        <div class="chart-content">
+                            <canvas id="statsQueryChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3>成本趋势</h3>
+                        </div>
+                        <div class="chart-content">
+                            <canvas id="statsCostChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 系统管理页面 -->
+            <div class="page" id="adminPage">
+                <div class="page-header">
+                    <h2>系统管理</h2>
+                </div>
+
+                <div class="admin-tabs">
+                    <button class="tab-btn active" data-tab="tenants">租户管理</button>
+                    <button class="tab-btn" data-tab="users">用户管理</button>
+                    <button class="tab-btn" data-tab="settings">系统设置</button>
+                </div>
+
+                <div class="admin-content">
+                    <div class="tab-content active" id="tenantsTab">
+                        <div class="tab-header">
+                            <h3>租户管理</h3>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus"></i> 添加租户
+                            </button>
+                        </div>
+                        <div class="tenants-table">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>租户ID</th>
+                                        <th>名称</th>
+                                        <th>状态</th>
+                                        <th>用户数</th>
+                                        <th>创建时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TENANT-001</td>
+                                        <td>默认租户</td>
+                                        <td><span class="status status-success">活跃</span></td>
+                                        <td>5</td>
+                                        <td>2026-03-01 00:00:00</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">编辑</button>
+                                            <button class="btn btn-sm btn-danger">删除</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="usersTab">
+                        <div class="tab-header">
+                            <h3>用户管理</h3>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus"></i> 添加用户
+                            </button>
+                        </div>
+                        <div class="users-table">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>用户ID</th>
+                                        <th>用户名</th>
+                                        <th>邮箱</th>
+                                        <th>角色</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>USER-001</td>
+                                        <td>admin</td>
+                                        <td>admin@example.com</td>
+                                        <td><span class="badge badge-primary">管理员</span></td>
+                                        <td><span class="status status-success">活跃</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">编辑</button>
+                                            <button class="btn btn-sm btn-danger">删除</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="settingsTab">
+                        <div class="tab-header">
+                            <h3>系统设置</h3>
+                        </div>
+                        <div class="settings-form">
+                            <form>
+                                <div class="form-group">
+                                    <label>系统名称</label>
+                                    <input type="text" class="form-control" value="企业级安全智能助手">
+                                </div>
+                                <div class="form-group">
+                                    <label>API密钥</label>
+                                    <input type="password" class="form-control" value="sk-xxxxxxxxxxxx">
+                                </div>
+                                <div class="form-group">
+                                    <label>最大并发数</label>
+                                    <input type="number" class="form-control" value="10">
+                                </div>
+                                <div class="form-group">
+                                    <label>启用日志</label>
+                                    <input type="checkbox" checked>
+                                </div>
+                                <button type="submit" class="btn btn-primary">保存设置</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

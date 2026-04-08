@@ -1,0 +1,15 @@
+# LangChain 核心库
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-openai>=0.0.1
+langchain-community>=0.0.1
+langgraph>=0.0.1
+
+# OpenAI 集成
+openai>=1.0.0
+
+# 向量数据库
+chromadb>=0.4.0
+
+# 文档处理
+python-dotenv>=1.0.0

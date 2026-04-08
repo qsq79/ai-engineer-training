@@ -1,0 +1,915 @@
+2026-03-14 22:24:20 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:24:21 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:24:21 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:24:21 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:24:21 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:24:21 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:26:29 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:26:29 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:26:29 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:26:29 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:26:29 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:26:29 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:26:29 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:26:29 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:26:30 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:26:30 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:26:30 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:26:30 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:26:30 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:26:30 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:26:31 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:26:31 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:26:31 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:26:31 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:26:31 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:26:31 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:26:32 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:26:32 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:26:32 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:26:32 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:26:32 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:28:20 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:28:20 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:28:20 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:28:20 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:28:20 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:28:20 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:44 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:29:44 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:29:44 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:29:44 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:44 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:44 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:45 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:45 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:29:45 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:29:45 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:45 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:45 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:46 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:46 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:46 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:46 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:46 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:29:47 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:29:47 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:47 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:47 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:47 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:47 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:47 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:47 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:48 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:29:48 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:29:48 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:29:48 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:48 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:48 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:49 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:49 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:49 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:49 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:49 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:29:50 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:29:50 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:50 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:50 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:50 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:52 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:29:50 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:57 - 数据库连接池初始化成功
+2026-03-14 22:29:50 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:65 - Redis连接池初始化成功
+2026-03-14 22:29:50 | INFO     | src.main:lifespan:70 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:30:11 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant 正在关闭...
+2026-03-14 22:30:11 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-03-14 22:30:11 | INFO     | src.main:lifespan:80 - Redis连接池已关闭
+2026-03-14 22:30:11 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:30:11 | ERROR    | src.main:lifespan:89 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-03-14 22:30:11 | INFO     | src.main:lifespan:91 - Enterprise Security Assistant 已关闭
+2026-03-14 22:32:15 | INFO     | src.main:lifespan:72 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:32:15 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:32:15 | INFO     | src.main:lifespan:77 - 数据库连接池初始化成功
+2026-03-14 22:32:15 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:32:15 | INFO     | src.main:lifespan:85 - Redis连接池初始化成功
+2026-03-14 22:32:15 | INFO     | src.main:lifespan:90 - Enterprise Security Assistant 已成功启动
+2026-03-14 22:34:00 | INFO     | src.main:lifespan:72 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-03-14 22:34:00 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-03-14 22:34:00 | INFO     | src.main:lifespan:77 - 数据库连接池初始化成功
+2026-03-14 22:34:00 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-03-14 22:34:00 | INFO     | src.main:lifespan:85 - Redis连接池初始化成功
+2026-03-14 22:34:00 | INFO     | src.main:lifespan:90 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:31:29 | INFO     | src.main:lifespan:95 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:31:29 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:31:29 | INFO     | src.main:lifespan:100 - Redis连接池已关闭
+2026-04-06 09:31:29 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:31:29 | ERROR    | src.main:lifespan:109 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:31:29 | INFO     | src.main:lifespan:111 - Enterprise Security Assistant 已关闭
+2026-04-06 09:31:34 | INFO     | src.main:lifespan:72 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:31:34 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:31:34 | INFO     | src.main:lifespan:77 - 数据库连接池初始化成功
+2026-04-06 09:31:34 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:31:34 | INFO     | src.main:lifespan:85 - Redis连接池初始化成功
+2026-04-06 09:31:34 | INFO     | src.main:lifespan:90 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:95 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:39:13 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:100 - Redis连接池已关闭
+2026-04-06 09:39:13 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:13 | ERROR    | src.main:lifespan:109 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:111 - Enterprise Security Assistant 已关闭
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:95 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:39:13 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:100 - Redis连接池已关闭
+2026-04-06 09:39:13 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:13 | ERROR    | src.main:lifespan:109 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:111 - Enterprise Security Assistant 已关闭
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:39:13 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:80 - 数据库连接池初始化成功
+2026-04-06 09:39:13 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:88 - Redis连接池初始化成功
+2026-04-06 09:39:13 | INFO     | src.main:lifespan:93 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:39:14 | INFO     | src.main:lifespan:75 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:39:14 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:39:14 | INFO     | src.main:lifespan:80 - 数据库连接池初始化成功
+2026-04-06 09:39:14 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:39:14 | INFO     | src.main:lifespan:88 - Redis连接池初始化成功
+2026-04-06 09:39:14 | INFO     | src.main:lifespan:93 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:39:30 | INFO     | src.main:lifespan:98 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:39:30 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:39:30 | INFO     | src.main:lifespan:103 - Redis连接池已关闭
+2026-04-06 09:39:30 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:30 | ERROR    | src.main:lifespan:112 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:30 | INFO     | src.main:lifespan:114 - Enterprise Security Assistant 已关闭
+2026-04-06 09:39:30 | INFO     | src.main:lifespan:98 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:39:30 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:39:30 | INFO     | src.main:lifespan:103 - Redis连接池已关闭
+2026-04-06 09:39:30 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:30 | ERROR    | src.main:lifespan:112 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:39:30 | INFO     | src.main:lifespan:114 - Enterprise Security Assistant 已关闭
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:39:44 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:39:44 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:39:44 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:39:44 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:39:44 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:41:35 | ERROR    | src.main:general_exception_handler:216 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:41:35 | ERROR    | src.main:general_exception_handler:216 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:41:52 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:41:52 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:41:52 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:41:52 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:41:52 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:41:52 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:41:55 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:41:55 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:41:55 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:41:55 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:41:55 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:41:55 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:42:00 | ERROR    | src.main:general_exception_handler:216 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:47:29 | ERROR    | src.main:general_exception_handler:216 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:47:29 | ERROR    | src.main:general_exception_handler:216 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:49:02 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:49:02 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:02 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:49:02 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:49:02 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:02 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:49:02 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:49:02 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:49:02 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:49:02 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:49:02 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:49:24 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:49:35 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:49:35 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:49:35 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:49:35 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:35 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:35 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:49:35 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:49:35 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:49:35 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:49:35 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:35 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:49:35 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:49:36 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:49:36 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:49:36 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:49:36 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:49:36 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:49:47 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:49995 user_id=None tenant_id=None
+2026-04-06 09:49:47 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:49:47.522075", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0025649070739746094, "success": true}
+2026-04-06 09:49:47 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.003s user_id=None tenant_id=None
+2026-04-06 09:50:01 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/css/style.css client=127.0.0.1:49998 user_id=None tenant_id=None
+2026-04-06 09:50:01 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:50:01.162819", "action": "GET", "resource": "/static/css/style.css", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0008459091186523438, "success": true}
+2026-04-06 09:50:01 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/css/style.css status=200 duration=0.001s user_id=None tenant_id=None
+2026-04-06 09:50:09 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/js/app.js client=127.0.0.1:50005 user_id=None tenant_id=None
+2026-04-06 09:50:09 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:50:09.277492", "action": "GET", "resource": "/static/js/app.js", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0004191398620605469, "success": true}
+2026-04-06 09:50:09 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/js/app.js status=200 duration=0.001s user_id=None tenant_id=None
+2026-04-06 09:50:17 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /api/v1/health client=127.0.0.1:50011 user_id=None tenant_id=None
+2026-04-06 09:50:17 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:50:17.444782", "action": "GET", "resource": "/api/v1/health", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.007489681243896484, "success": true}
+2026-04-06 09:50:17 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /api/v1/health status=200 duration=0.008s user_id=None tenant_id=None
+2026-04-06 09:50:41 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /api/v1/health client=127.0.0.1:50041 user_id=None tenant_id=None
+2026-04-06 09:50:41 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:50:41.518960", "action": "GET", "resource": "/api/v1/health", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0035080909729003906, "success": true}
+2026-04-06 09:50:41 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /api/v1/health status=200 duration=0.005s user_id=None tenant_id=None
+2026-04-06 09:51:10 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:51:10 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:51:10 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:51:10 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:51:10 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:51:10 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:51:11 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:51:11 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:51:11 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:51:11 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:51:11 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50066 user_id=None tenant_id=None
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:51:19.925351", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0050771236419677734, "success": true}
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.006s user_id=None tenant_id=None
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/css/style.css client=127.0.0.1:50066 user_id=None tenant_id=None
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/js/app.js client=127.0.0.1:50068 user_id=None tenant_id=None
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:51:19.941316", "action": "GET", "resource": "/static/css/style.css", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0015778541564941406, "success": true}
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/css/style.css status=200 duration=0.003s user_id=None tenant_id=None
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:51:19.942277", "action": "GET", "resource": "/static/js/app.js", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0021719932556152344, "success": true}
+2026-04-06 09:51:19 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/js/app.js status=200 duration=0.003s user_id=None tenant_id=None
+2026-04-06 09:51:24 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:51:38 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:02 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:10 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:15 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:25 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:26 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:27 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:27 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:52:30 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50147 user_id=None tenant_id=None
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:53:16.633504", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0048177242279052734, "success": true}
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.006s user_id=None tenant_id=None
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/css/style.css client=127.0.0.1:50147 user_id=None tenant_id=None
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/js/app.js client=127.0.0.1:50149 user_id=None tenant_id=None
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:53:16.646786", "action": "GET", "resource": "/static/css/style.css", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0030150413513183594, "success": true}
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:53:16.647207", "action": "GET", "resource": "/static/js/app.js", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0026123523712158203, "success": true}
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/css/style.css status=200 duration=0.005s user_id=None tenant_id=None
+2026-04-06 09:53:16 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/js/app.js status=200 duration=0.005s user_id=None tenant_id=None
+2026-04-06 09:53:16 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:54:03 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:54:03 | ERROR    | src.database.db_pool:close:70 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:54:03 | ERROR    | src.main:lifespan:126 - 关闭数据库连接池失败: the greenlet library is required to use this function. No module named 'greenlet'
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 09:54:03 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 09:54:03 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 09:54:03 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 09:55:36 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:55:36 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:55:36 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:55:36 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:55:36 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:55:36 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 09:56:04 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50233 user_id=None tenant_id=None
+2026-04-06 09:56:04 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:56:04.063500", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0027091503143310547, "success": true}
+2026-04-06 09:56:04 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.003s user_id=None tenant_id=None
+2026-04-06 09:57:20 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /api/v1/health client=127.0.0.1:50258 user_id=None tenant_id=None
+2026-04-06 09:57:20 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T01:57:20.101695", "action": "GET", "resource": "/api/v1/health", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.004034996032714844, "success": true}
+2026-04-06 09:57:20 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /api/v1/health status=200 duration=0.005s user_id=None tenant_id=None
+2026-04-06 09:57:49 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 09:57:49 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 09:57:49 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 09:57:49 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 09:57:49 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 09:57:49 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:02:37 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:02:37 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:02:37 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:02:37 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:02:37 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:02:37 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:02:38 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:02:38 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:02:38 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:02:38 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:02:38 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:02:38 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:02:38 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:02:49 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:02:49 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:02:49 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:02:49 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:02:49 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:02:49 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:02:50 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:02:50 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:02:50 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:02:50 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:02:50 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:02:50 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:02:56 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:02:56 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:02:56 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:02:56 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:02:56 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:02:56 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:02:57 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:02:57 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:02:57 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:02:57 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:02:57 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:02:57 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:03:10 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:03:10 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:03:10 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:03:10 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:03:10 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:03:10 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:03:11 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:03:11 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:03:11 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:03:11 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:03:11 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:03:11 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:03:35 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50455 user_id=None tenant_id=None
+2026-04-06 10:03:35 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:03:35.855473", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0018110275268554688, "success": true}
+2026-04-06 10:03:35 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.003s user_id=None tenant_id=None
+2026-04-06 10:15:50 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:15:50 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:15:50 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:15:50 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:15:50 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:15:50 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:15:53 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:15:53 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:15:53 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:15:53 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:15:53 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:15:53 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50706 user_id=None tenant_id=None
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:16:04.251024", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.006079912185668945, "success": true}
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.007s user_id=None tenant_id=None
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/css/style.css client=127.0.0.1:50706 user_id=None tenant_id=None
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/js/app.js client=127.0.0.1:50708 user_id=None tenant_id=None
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:16:04.267996", "action": "GET", "resource": "/static/js/app.js", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 304, "duration": 0.0012428760528564453, "success": true}
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/js/app.js status=304 duration=0.002s user_id=None tenant_id=None
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:16:04.268598", "action": "GET", "resource": "/static/css/style.css", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 304, "duration": 0.002256155014038086, "success": true}
+2026-04-06 10:16:04 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/css/style.css status=304 duration=0.003s user_id=None tenant_id=None
+2026-04-06 10:16:04 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:06 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50719 user_id=None tenant_id=None
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:16:24.292477", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.005125761032104492, "success": true}
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.008s user_id=None tenant_id=None
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/css/style.css client=127.0.0.1:50719 user_id=None tenant_id=None
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:16:24.343056", "action": "GET", "resource": "/static/css/style.css", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0013308525085449219, "success": true}
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/css/style.css status=200 duration=0.002s user_id=None tenant_id=None
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET /static/js/app.js client=127.0.0.1:50720 user_id=None tenant_id=None
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:16:24.346568", "action": "GET", "resource": "/static/js/app.js", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.0005402565002441406, "success": true}
+2026-04-06 10:16:24 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET /static/js/app.js status=200 duration=0.001s user_id=None tenant_id=None
+2026-04-06 10:16:27 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:35 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:44 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:44 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:45 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:16:58 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:17:02 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:17:10 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:17:40 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:18:25 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: GET / client=127.0.0.1:50791 user_id=None tenant_id=None
+2026-04-06 10:18:25 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:18:25.542958", "action": "GET", "resource": "/", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 200, "duration": 0.00040078163146972656, "success": true}
+2026-04-06 10:18:25 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: GET / status=200 duration=0.001s user_id=None tenant_id=None
+2026-04-06 10:18:33 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:21:07 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:21:07 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:21:07 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:21:07 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:21:07 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:21:07 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:21:08 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:21:08 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:21:08 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:21:08 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:21:08 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:21:08 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:21:14 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:21:14 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:21:14 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:21:14 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:21:14 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:21:14 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:21:15 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:21:15 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:21:15 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:21:15 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:21:15 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:21:15 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:21:24 | ERROR    | src.main:general_exception_handler:206 - 未处理的异常: 401: 未提供认证令牌
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:22:16 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:22:16 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:22:16 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:22:39 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:22:39 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:22:39 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:22:39 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:22:39 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:22:39 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:22:49 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:50904 user_id=None tenant_id=None
+2026-04-06 10:22:49 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:22:49.344619", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 404, "duration": 0.0002849102020263672, "success": false}
+2026-04-06 10:22:49 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=404 duration=0.001s user_id=None tenant_id=None
+2026-04-06 10:23:52 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:23:52 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:23:52 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:23:52 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:23:52 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:23:52 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:33:15 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:33:15 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:33:15 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:33:15 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:33:15 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:33:15 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:33:46 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51203 user_id=None tenant_id=None
+2026-04-06 10:33:46 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:33:46.793155", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 422, "duration": 0.001580953598022461, "success": false}
+2026-04-06 10:33:46 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=422 duration=0.002s user_id=None tenant_id=None
+2026-04-06 10:34:04 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51207 user_id=None tenant_id=None
+2026-04-06 10:34:04 | INFO     | src.api.routes.query:unified_query:72 - 收到查询请求: query=我的系统安全吗？, tenant_id=test_tenant, user_id=test_user
+2026-04-06 10:34:04 | ERROR    | src.api.routes.query:unified_query:154 - 统一查询处理失败: name 'intent_agent' is not defined
+2026-04-06 10:34:04 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:34:04.533488", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.0005948543548583984, "success": false}
+2026-04-06 10:34:04 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.001s user_id=None tenant_id=None
+2026-04-06 10:34:55 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:34:55 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:34:55 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:34:55 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:34:55 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:34:55 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:34:58 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:34:58 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:34:58 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:34:58 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:34:58 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:34:58 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:35:30 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51256 user_id=None tenant_id=None
+2026-04-06 10:35:30 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=我的系统安全吗？, tenant_id=test_tenant, user_id=test_user
+2026-04-06 10:35:30 | ERROR    | src.api.routes.query:unified_query:166 - 统一查询处理失败: cannot import name 'redis_manager' from 'src.database.db_pool' (/Users/quan/Desktop/code/ai-engineer-training/src/app/enterprise-security-assistant/src/database/db_pool.py)
+2026-04-06 10:35:30 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:35:30.757570", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.002856016159057617, "success": false}
+2026-04-06 10:35:30 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.004s user_id=None tenant_id=None
+2026-04-06 10:36:37 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:36:37 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:36:37 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:36:37 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:36:37 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:36:37 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:36:40 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:36:40 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:36:40 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:36:40 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:36:40 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:36:40 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:43:36 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51443 user_id=None tenant_id=None
+2026-04-06 10:43:36 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=我的系统安全吗？, tenant_id=test_tenant, user_id=test_user
+2026-04-06 10:43:36 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:43:36 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:43:36 | ERROR    | src.api.routes.query:unified_query:166 - 统一查询处理失败: 'Settings' object has no attribute 'vector_db_path'
+2026-04-06 10:43:36 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:43:36.468673", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.019338130950927734, "success": false}
+2026-04-06 10:43:36 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.020s user_id=None tenant_id=None
+2026-04-06 10:45:10 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:45:10 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:45:10 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:45:10 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:45:10 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:45:10 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:45:13 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:45:13 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:45:13 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:45:13 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:45:13 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:45:13 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:45:44 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51503 user_id=None tenant_id=None
+2026-04-06 10:45:44 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:45:44.163777", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 422, "duration": 0.0018277168273925781, "success": false}
+2026-04-06 10:45:44 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=422 duration=0.002s user_id=None tenant_id=None
+2026-04-06 10:45:57 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51509 user_id=None tenant_id=None
+2026-04-06 10:45:57 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 10:45:57 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:45:57 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:45:57 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 10:46:33 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 10:46:33 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 10:46:33 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 10:46:33 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 10:46:33 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 10:46:33 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 10:46:33 | ERROR    | src.api.routes.query:unified_query:166 - 统一查询处理失败: IntentAgent.recognize_intent() got an unexpected keyword argument 'context'
+2026-04-06 10:46:33 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:46:33.205913", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 35.74414896965027, "success": false}
+2026-04-06 10:46:33 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=35.745s user_id=None tenant_id=None
+2026-04-06 10:47:26 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:47:26 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:47:26 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:47:26 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:47:26 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:47:26 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:47:29 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:47:29 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:47:29 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:47:29 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:47:29 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:47:29 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:48:12 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51564 user_id=None tenant_id=None
+2026-04-06 10:48:12 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 10:48:12 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:48:12 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:48:12 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 10:48:14 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 10:48:14 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 10:48:14 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 10:48:14 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 10:48:14 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 10:48:14 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 10:48:14 | INFO     | src.agents.intent_agent:recognize_intent:324 - 开始意图识别: query='分析最近的安全威胁', user_id=test-user, session_id=None
+2026-04-06 10:48:14 | ERROR    | src.agents.intent_agent:recognize_intent:366 - 意图识别失败: 'async_generator' object does not support the asynchronous context manager protocol
+2026-04-06 10:48:14 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: 'async_generator' object does not support the asynchronous context manager protocol
+2026-04-06 10:48:14 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:48:14.227868", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 1.5707850456237793, "success": false}
+2026-04-06 10:48:14 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=1.571s user_id=None tenant_id=None
+2026-04-06 10:50:00 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:50:00 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:50:00 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:50:00 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:50:00 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:50:00 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:50:03 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:50:03 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:50:03 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:50:03 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:50:03 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:50:03 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:51:29 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51646 user_id=None tenant_id=None
+2026-04-06 10:51:29 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 10:51:29 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:51:29 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:51:29 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 10:51:32 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 10:51:32 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 10:51:32 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 10:51:32 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 10:51:32 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 10:51:32 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 10:51:32 | INFO     | src.agents.intent_agent:recognize_intent:325 - 开始意图识别: query='分析最近的安全威胁', user_id=test-user, session_id=None
+2026-04-06 10:51:32 | ERROR    | src.agents.intent_agent:recognize_intent:367 - 意图识别失败: Textual SQL expression 'SELECT * FROM sessions WH...' should be explicitly declared as text('SELECT * FROM sessions WH...')
+2026-04-06 10:51:32 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: 'user_id' is an invalid keyword argument for AgentCall
+2026-04-06 10:51:32 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:51:32.302936", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 3.2279891967773438, "success": false}
+2026-04-06 10:51:32 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=3.229s user_id=None tenant_id=None
+2026-04-06 10:52:20 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:52:20 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:52:20 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:52:20 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:52:20 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:52:20 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:52:22 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:52:22 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:52:22 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:52:22 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:52:22 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:52:22 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:52:52 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51683 user_id=None tenant_id=None
+2026-04-06 10:52:52 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 10:52:52 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:52:52 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:52:52 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 10:52:53 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 10:52:53 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 10:52:53 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 10:52:53 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 10:52:53 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 10:52:53 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 10:52:53 | INFO     | src.agents.intent_agent:recognize_intent:325 - 开始意图识别: query='分析最近的安全威胁', user_id=test-user, session_id=None
+2026-04-06 10:52:53 | ERROR    | src.agents.intent_agent:recognize_intent:367 - 意图识别失败: Textual SQL expression 'SELECT * FROM sessions WH...' should be explicitly declared as text('SELECT * FROM sessions WH...')
+2026-04-06 10:52:53 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 10:52:53 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:52:53.708443", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 1.570746898651123, "success": false}
+2026-04-06 10:52:53 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=1.571s user_id=None tenant_id=None
+2026-04-06 10:53:34 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:53:34 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:53:34 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:53:34 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:53:34 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:53:34 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:53:37 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:53:37 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:53:37 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:53:37 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:53:37 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:53:37 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:54:10 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51728 user_id=None tenant_id=None
+2026-04-06 10:54:10 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 10:54:10 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:54:10 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:54:10 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 10:54:12 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 10:54:12 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 10:54:12 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 10:54:12 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 10:54:12 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 10:54:12 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 10:54:12 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='分析最近的安全威胁', user_id=test-user, session_id=None
+2026-04-06 10:54:12 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 10:54:12 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'str' object has no attribute 'value'
+2026-04-06 10:54:12 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 10:54:12 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:54:12.357757", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 1.7241320610046387, "success": false}
+2026-04-06 10:54:12 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=1.725s user_id=None tenant_id=None
+2026-04-06 10:55:00 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 10:55:00 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 10:55:00 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 10:55:00 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 10:55:00 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 10:55:00 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 10:55:03 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 10:55:03 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 10:55:03 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 10:55:03 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 10:55:03 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 10:55:03 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 10:55:33 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:51772 user_id=None tenant_id=None
+2026-04-06 10:55:33 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 10:55:33 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 10:55:33 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 10:55:33 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 10:55:35 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 10:55:35 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 10:55:35 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 10:55:35 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 10:55:35 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 10:55:35 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 10:55:35 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='分析最近的安全威胁', user_id=test-user, session_id=None
+2026-04-06 10:55:35 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 10:55:35 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'str' object has no attribute 'value'
+2026-04-06 10:55:35 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 10:55:35 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T02:55:35.487959", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 1.5485551357269287, "success": false}
+2026-04-06 10:55:35 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=1.549s user_id=None tenant_id=None
+2026-04-06 11:08:37 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 11:08:37 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 11:08:37 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 11:08:37 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 11:08:37 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 11:08:37 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-06 11:08:40 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 11:08:40 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 11:08:40 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 11:08:40 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 11:08:40 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 11:08:40 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 11:09:10 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:52080 user_id=None tenant_id=None
+2026-04-06 11:09:10 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=分析最近的安全威胁, tenant_id=default, user_id=test-user
+2026-04-06 11:09:10 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 11:09:10 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 11:09:10 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 11:09:13 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 11:09:13 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 11:09:13 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 11:09:13 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 11:09:13 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 11:09:13 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 11:09:13 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='分析最近的安全威胁', user_id=test-user, session_id=None
+2026-04-06 11:09:13 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 11:09:13 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-06 11:09:13 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 11:09:13 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T03:09:13.822756", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 3.243170976638794, "success": false}
+2026-04-06 11:09:13 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=3.244s user_id=None tenant_id=None
+2026-04-06 11:10:51 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-06 11:10:51 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-06 11:10:51 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-06 11:10:51 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-06 11:10:51 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-06 11:10:51 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-06 11:11:20 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:52138 user_id=None tenant_id=None
+2026-04-06 11:11:20 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=为什么最近的安全评分下降了？, tenant_id=tenant-001, user_id=user-001
+2026-04-06 11:11:20 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-06 11:11:20 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-06 11:11:20 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-06 11:11:23 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-06 11:11:23 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-06 11:11:23 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-06 11:11:23 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-06 11:11:23 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-06 11:11:23 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-06 11:11:23 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='为什么最近的安全评分下降了？', user_id=user-001, session_id=None
+2026-04-06 11:11:23 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 11:11:23 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-06 11:11:23 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 11:11:23 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T03:11:23.292216", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 3.006204843521118, "success": false}
+2026-04-06 11:11:23 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=3.007s user_id=None tenant_id=None
+2026-04-06 11:13:32 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:52201 user_id=None tenant_id=None
+2026-04-06 11:13:32 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=查询本周的威胁情报, tenant_id=tenant-001, user_id=user-001
+2026-04-06 11:13:32 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='查询本周的威胁情报', user_id=user-001, session_id=None
+2026-04-06 11:13:32 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 11:13:32 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-06 11:13:32 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 11:13:32 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T03:13:32.821304", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.02536797523498535, "success": false}
+2026-04-06 11:13:32 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.029s user_id=None tenant_id=None
+2026-04-06 11:13:35 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:52201 user_id=None tenant_id=None
+2026-04-06 11:13:35 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=查询本周的威胁情报, tenant_id=tenant-001, user_id=user-001
+2026-04-06 11:13:35 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='查询本周的威胁情报', user_id=user-001, session_id=None
+2026-04-06 11:13:35 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 11:13:35 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-06 11:13:35 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 11:13:35 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T03:13:35.915446", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.013203144073486328, "success": false}
+2026-04-06 11:13:35 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.014s user_id=None tenant_id=None
+2026-04-06 11:13:40 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:52207 user_id=None tenant_id=None
+2026-04-06 11:13:40 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=查询本周的威胁情报, tenant_id=tenant-001, user_id=user-001
+2026-04-06 11:13:40 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='查询本周的威胁情报', user_id=user-001, session_id=None
+2026-04-06 11:13:40 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-06 11:13:40 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-06 11:13:40 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-06 11:13:40 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-06T03:13:40.112302", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.009509801864624023, "success": false}
+2026-04-06 11:13:40 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.011s user_id=None tenant_id=None
+2026-04-06 11:25:19 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-06 11:25:19 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-06 11:25:19 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-06 11:25:19 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-06 11:25:19 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-06 11:25:19 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-08 22:25:36 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-08 22:25:36 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-08 22:25:36 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-08 22:25:36 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-08 22:25:36 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-08 22:25:36 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-08 22:31:26 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:57175 user_id=None tenant_id=None
+2026-04-08 22:31:26 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=为什么最近的安全评分下降了？, tenant_id=tenant-001, user_id=user-001
+2026-04-08 22:31:26 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-08 22:31:26 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-08 22:31:26 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-08 22:31:29 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-08 22:31:29 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-08 22:31:29 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-08 22:31:29 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-08 22:31:29 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-08 22:31:29 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-08 22:31:29 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='为什么最近的安全评分下降了？', user_id=user-001, session_id=None
+2026-04-08 22:31:29 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-08 22:31:29 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-08 22:31:29 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-08 22:31:29 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-08T14:31:29.314972", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 2.992048740386963, "success": false}
+2026-04-08 22:31:29 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=2.993s user_id=None tenant_id=None
+2026-04-08 22:31:35 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:57182 user_id=None tenant_id=None
+2026-04-08 22:31:35 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=查询本周的威胁情报, tenant_id=tenant-001, user_id=user-001
+2026-04-08 22:31:35 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='查询本周的威胁情报', user_id=user-001, session_id=None
+2026-04-08 22:31:35 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-08 22:31:35 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-08 22:31:35 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-08 22:31:35 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-08T14:31:35.472574", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 0.006216287612915039, "success": false}
+2026-04-08 22:31:35 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=0.007s user_id=None tenant_id=None
+2026-04-08 22:32:26 | INFO     | src.main:lifespan:112 - Enterprise Security Assistant 正在关闭...
+2026-04-08 22:32:26 | INFO     | src.database.redis_pool:close:71 - Redis连接池已关闭
+2026-04-08 22:32:26 | INFO     | src.main:lifespan:117 - Redis连接池已关闭
+2026-04-08 22:32:26 | INFO     | src.database.db_pool:close:68 - 数据库连接池已关闭
+2026-04-08 22:32:26 | INFO     | src.main:lifespan:124 - 数据库连接池已关闭
+2026-04-08 22:32:26 | INFO     | src.main:lifespan:128 - Enterprise Security Assistant 已关闭
+2026-04-08 22:32:33 | INFO     | src.main:lifespan:89 - Enterprise Security Assistant v1.0.0 正在启动...
+2026-04-08 22:32:33 | INFO     | src.database.db_pool:initialize:49 - 数据库连接池初始化成功，pool_size=10, max_overflow=20
+2026-04-08 22:32:33 | INFO     | src.main:lifespan:94 - 数据库连接池初始化成功
+2026-04-08 22:32:33 | INFO     | src.database.redis_pool:initialize:52 - Redis连接池初始化成功，pool_size=10
+2026-04-08 22:32:33 | INFO     | src.main:lifespan:102 - Redis连接池初始化成功
+2026-04-08 22:32:33 | INFO     | src.main:lifespan:107 - Enterprise Security Assistant 已成功启动
+2026-04-08 22:33:17 | INFO     | src.api.middleware.logging:__call__:63 - 请求开始: POST /api/v1/query client=127.0.0.1:57236 user_id=None tenant_id=None
+2026-04-08 22:33:17 | INFO     | src.api.routes.query:unified_query:84 - 收到查询请求: query=查询本周的威胁情报, tenant_id=tenant-001, user_id=user-001
+2026-04-08 22:33:17 | INFO     | src.agents.log_query_agent:_initialize_mock_reports:163 - 初始化 2 个模拟月报数据
+2026-04-08 22:33:17 | INFO     | src.agents.log_query_agent:__init__:132 - 日志查询Agent初始化完成
+2026-04-08 22:33:17 | INFO     | src.agents.scoring_agent:_initialize_vector_store:170 - 初始化向量数据库
+2026-04-08 22:33:20 | INFO     | src.agents.scoring_agent:_load_sample_documents:204 - 加载示例文档到向量数据库
+2026-04-08 22:33:20 | INFO     | src.agents.scoring_agent:_initialize_vector_store:184 - 向量数据库初始化完成
+2026-04-08 22:33:20 | INFO     | src.agents.scoring_agent:__init__:166 - 评分解读Agent初始化完成
+2026-04-08 22:33:20 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:285 - 初始化威胁情报数据库
+2026-04-08 22:33:20 | INFO     | src.agents.threat_analysis_agent:_initialize_threat_intel_db:358 - 初始化 2 个IP、2 个域名、1 个Hash威胁情报
+2026-04-08 22:33:20 | INFO     | src.agents.threat_analysis_agent:__init__:281 - 威胁分析Agent初始化完成
+2026-04-08 22:33:20 | INFO     | src.agents.intent_agent:recognize_intent:311 - 开始意图识别: query='查询本周的威胁情报', user_id=user-001, session_id=None
+2026-04-08 22:33:20 | WARNING  | src.agents.intent_agent:_get_session_context:177 - 获取会话上下文被跳过（session_id=None）- 数据库未配置
+2026-04-08 22:33:20 | ERROR    | src.agents.intent_agent:recognize_intent:353 - 意图识别失败: 'intent_type'
+2026-04-08 22:33:20 | ERROR    | src.api.routes.query:unified_query:165 - 统一查询处理失败: role "user" does not exist
+2026-04-08 22:33:20 | INFO     | src.api.middleware.logging:_log_audit_event:242 - 审计日志: {"timestamp": "2026-04-08T14:33:20.129819", "action": "POST", "resource": "/api/v1/query", "query_params": null, "user_id": null, "tenant_id": null, "client_ip": "127.0.0.1", "status_code": 500, "duration": 2.2481048107147217, "success": false}
+2026-04-08 22:33:20 | INFO     | src.api.middleware.logging:__call__:77 - 请求完成: POST /api/v1/query status=500 duration=2.250s user_id=None tenant_id=None
