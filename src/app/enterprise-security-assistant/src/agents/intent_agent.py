@@ -5,6 +5,7 @@
 """
 from typing import Optional, Dict, List, Any
 from datetime import datetime
+from dataclasses import dataclass
 import json
 
 from langchain_openai import ChatOpenAI
@@ -65,6 +66,7 @@ INTENT_CLASSIFICATION = {
 }
 
 
+@dataclass
 class IntentRecognitionResult:
     """意图识别结果"""
     intent_type: str                       # 意图类型
@@ -194,7 +196,8 @@ class IntentAgent:
             for keyword in keywords:
                 if keyword.lower() in query_lower:
                     logger.debug(f"关键词匹配: '{keyword}' -> {intent_type}")
-                    return intent_config
+                    # 返回完整信息，包含 intent_type
+                    return {**intent_config, "intent_type": intent_type}
         
         return None
     
@@ -227,7 +230,9 @@ class IntentAgent:
                     return self._fallback_classification(query)
                 
                 # 验证意图类型
-                if result_dict["intent_type"] not in [it.value for it in IntentType]:
+                # 获取IntentType的所有字符串常量值
+                intent_type_values = [v for k, v in IntentType.__dict__.items() if not k.startswith("_") and isinstance(v, str)]
+                if result_dict["intent_type"] not in intent_type_values:
                     logger.warning(f"LLM返回了未知的意图类型: {result_dict['intent_type']}")
                     return self._fallback_classification(query)
                 
@@ -270,7 +275,7 @@ class IntentAgent:
             for keyword in keywords:
                 if keyword.lower() in query_lower:
                     return IntentRecognitionResult(
-                        intent_type=intent_type.value,
+                        intent_type=intent_type,
                         target_agent=intent_config["target_agent"],
                         confidence=0.8,  # 降级分类的置信度较低
                         params={},
@@ -281,7 +286,7 @@ class IntentAgent:
         # 默认归类为知识检索
         logger.warning(f"未匹配到任何意图，默认归类为知识检索")
         return IntentRecognitionResult(
-            intent_type=IntentType.KNOWLEDGE_SEARCH.value,
+            intent_type=IntentType.KNOWLEDGE_SEARCH,
             target_agent="KnowledgeAgent",
             confidence=0.5,
             params={"query": query},

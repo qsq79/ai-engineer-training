@@ -57,11 +57,29 @@ def get_agents():
 
 # 全局Agent实例（懒加载）
 _agents = None
-def _get_intent_agent():
+
+def _get_agents():
+    """获取所有Agent实例（懒加载）"""
     global _agents
     if _agents is None:
         _agents = get_agents()
-    return _agents["intent_agent"]
+    return _agents
+
+def _get_intent_agent():
+    """获取意图识别Agent"""
+    return _get_agents()["intent_agent"]
+
+def _get_log_query_agent():
+    """获取日志查询Agent"""
+    return _get_agents()["log_query_agent"]
+
+def _get_scoring_agent():
+    """获取评分解读Agent"""
+    return _get_agents()["scoring_agent"]
+
+def _get_threat_agent():
+    """获取威胁分析Agent"""
+    return _get_agents()["threat_agent"]
 
 
 @router.post("/query", response_model=QueryResponse, summary="统一查询接口")
@@ -91,50 +109,55 @@ async def unified_query(
             session_id=query_req.session_id
         )
         
-        logger.info(f"意图识别结果: {intent_result}")
+        # 将 IntentRecognitionResult 转换为字典
+        intent_dict = intent_result.to_dict() if hasattr(intent_result, 'to_dict') else intent_result
+        logger.info(f"意图识别结果: {intent_dict}")
         
         # 步骤2：根据意图调用相应的Agent
         result = {}
-        confidence = intent_result.get("confidence", 0.0)
-        
-        if intent_result["intent"] == IntentType.QUERY_DIFF:
+        confidence = intent_dict.get("confidence", 0.0)
+        intent_type = intent_dict.get("intent_type", "unknown")
+        if intent_type == IntentType.QUERY_DIFF:
             # 日志查询差异
-            result = await log_query_agent.query_diff(
+            log_agent = _get_log_query_agent()
+            result = await log_agent.query_diff(
                 query=query_req.query,
                 tenant_id=query_req.tenant_id,
                 user_id=query_req.user_id,
                 session_id=query_req.session_id,
-                parameters=intent_result.get("parameters", {})
+                parameters=intent_dict.get("params", {})
             )
             
-        elif intent_result["intent"] == IntentType.SCORING_EXPLANATION:
+        elif intent_type == IntentType.SCORING_EXPLANATION:
             # 评分解读
-            result = await scoring_agent.explain_score(
+            scoring = _get_scoring_agent()
+            result = await scoring.explain_score(
                 query=query_req.query,
                 tenant_id=query_req.tenant_id,
                 user_id=query_req.user_id,
                 session_id=query_req.session_id,
-                parameters=intent_result.get("parameters", {})
+                parameters=intent_dict.get("params", {})
             )
             
-        elif intent_result["intent"] == IntentType.THREAT_ANALYSIS:
+        elif intent_type == IntentType.THREAT_ANALYSIS:
             # 威胁分析
-            result = await threat_agent.analyze_threat(
+            threat = _get_threat_agent()
+            result = await threat.analyze_threat(
                 query=query_req.query,
                 tenant_id=query_req.tenant_id,
                 user_id=query_req.user_id,
                 session_id=query_req.session_id,
-                parameters=intent_result.get("parameters", {})
+                parameters=intent_dict.get("params", {})
             )
             
-        elif intent_result["intent"] == IntentType.COMPLIANCE_CHECK:
+        elif intent_type == IntentType.COMPLIANCE_CHECK:
             # 合规检查
             result = {
                 "message": "合规检查功能正在开发中",
                 "status": "in_development"
             }
             
-        elif intent_result["intent"] == IntentType.KNOWLEDGE_SEARCH:
+        elif intent_type == IntentType.KNOWLEDGE_SEARCH:
             # 知识检索
             result = {
                 "message": "知识检索功能正在开发中",
@@ -144,18 +167,18 @@ async def unified_query(
         else:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail=f"未知意图类型: {intent_result['intent']}"
+                detail=f"未知意图类型: {intent_type}"
             )
         
         # 步骤3：生成响应
         response = QueryResponse(
-            intent=intent_result["intent"],
+            intent=intent_type,
             result=result,
             confidence=confidence,
-            suggested_followup=intent_result.get("suggested_followup", [])
+            suggested_followup=intent_dict.get("reasoning", "").split("。") if intent_dict.get("reasoning") else []
         )
         
-        logger.info(f"查询处理完成: intent={intent_result['intent']}, confidence={confidence}")
+        logger.info(f"查询处理完成: intent={intent_type}, confidence={confidence}")
         
         return response
         

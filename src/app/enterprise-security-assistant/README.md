@@ -60,7 +60,7 @@ nano .env  # 或使用其他编辑器
 ./start.sh
 
 # 或直接运行
-python -m uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+python -m uvicorn src.main:app --host 0.0.0.0 --port 8001 --reload
 ```
 
 5. **访问应用**

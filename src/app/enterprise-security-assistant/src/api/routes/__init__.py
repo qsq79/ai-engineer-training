@@ -8,6 +8,7 @@ from .sessions import router as sessions_router
 from .compliance import router as compliance_router
 from .stats import router as stats_router
 from .admin import router as admin_router
+from .auth import router as auth_router
 
 __all__ = [
     "query_router",
@@ -17,4 +18,5 @@ __all__ = [
     "compliance_router",
     "stats_router",
     "admin_router",
+    "auth_router",
 ]

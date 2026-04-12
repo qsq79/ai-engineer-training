@@ -44,6 +44,7 @@ class User(Base):
     role = Column(String(50), nullable=False, comment="角色（super_admin/security_manager/security_analyst/read_only）")
     permissions = Column(JSONB, nullable=False, comment="权限列表")
     is_active = Column(Boolean, default=True, comment="是否激活")
+    password_hash = Column(String(255), nullable=True, comment="bcrypt加密后的密码")
     created_at = Column(DateTime, default=datetime.utcnow, comment="创建时间")
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, comment="更新时间")
     

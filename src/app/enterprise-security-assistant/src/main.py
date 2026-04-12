@@ -47,12 +47,38 @@ async def root():
     return FileResponse(index_path)
 
 # 配置CORS
+def parse_corsOrigins(value):
+    """解析CORSOrigins配置"""
+    if isinstance(value, str):
+        if value == "*":
+            return ["*"]
+        # 尝试解析为JSON数组
+        import json
+        try:
+            return json.loads(value)
+        except:
+            # 如果失败，尝试按逗号分隔
+            return [v.strip() for v in value.split(",") if v.strip()]
+    return value if value else ["*"]
+
+def parse_cors_list(value):
+    """解析CORS列表配置（方法、头部等）"""
+    if isinstance(value, str):
+        if value == "*":
+            return ["*"]
+        import json
+        try:
+            return json.loads(value)
+        except:
+            return [v.strip() for v in value.split(",") if v.strip()]
+    return value if value else ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins,
+    allow_origins=parse_corsOrigins(settings.cors_origins),
     allow_credentials=settings.cors_allow_credentials,
-    allow_methods=settings.cors_allow_methods,
-    allow_headers=settings.cors_allow_headers,
+    allow_methods=parse_cors_list(settings.cors_allow_methods),
+    allow_headers=parse_cors_list(settings.cors_allow_headers),
 )
 
 # 导入并注册路由
@@ -63,7 +89,8 @@ from .api.routes import (
     sessions_router,
     compliance_router,
     stats_router,
-    admin_router
+    admin_router,
+    auth_router,
 )
 
 # 注册所有路由
@@ -74,6 +101,7 @@ app.include_router(sessions_router, prefix="/api/v1", tags=["会话"])
 app.include_router(compliance_router, prefix="/api/v1", tags=["合规"])
 app.include_router(stats_router, prefix="/api/v1", tags=["统计"])
 app.include_router(admin_router, prefix="/api/v1", tags=["管理"])
+app.include_router(auth_router, prefix="/api/v1/auth", tags=["认证"])
 
 # 添加中间件
 app.middleware("http")(audit_log_middleware)

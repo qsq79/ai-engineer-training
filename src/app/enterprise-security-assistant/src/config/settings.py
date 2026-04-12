@@ -87,10 +87,10 @@ class Settings(BaseSettings):
     tracing_enabled: bool = Field(default=True, description="是否启用链路追踪")
     
     # CORS配置
-    cors_origins: List[str] = Field(default=["*"], description="CORS允许的源")
+    cors_origins: str = Field(default="*", description="CORS允许的源（逗号分隔或*）")
     cors_allow_credentials: bool = Field(default=True, description="CORS允许凭证")
-    cors_allow_methods: List[str] = Field(default=["*"], description="CORS允许的方法")
-    cors_allow_headers: List[str] = Field(default=["*"], description="CORS允许的头部")
+    cors_allow_methods: str = Field(default="*", description="CORS允许的方法（逗号分隔或*）")
+    cors_allow_headers: str = Field(default="*", description="CORS允许的头部（逗号分隔或*）")
     
     @field_validator("log_level")
     @classmethod

@@ -116,15 +116,29 @@ class Base(DeclarativeBase):
 db_manager = DatabaseManager()
 
 
-async def get_db_session() -> AsyncGenerator[AsyncSession, None]:
+from contextlib import asynccontextmanager
+
+@asynccontextmanager
+async def get_db_session():
     """
     获取数据库会话（用于FastAPI依赖注入）
     
     Yields:
         数据库会话实例
     """
-    async with db_manager.get_session() as session:
+    if not db_manager._initialized:
+        raise RuntimeError("数据库连接池未初始化")
+    
+    # 创建一个新的session
+    session = db_manager.async_session_maker()
+    try:
         yield session
+        await session.commit()
+    except Exception:
+        await session.rollback()
+        raise
+    finally:
+        await session.close()
 
 
 async def init_database():

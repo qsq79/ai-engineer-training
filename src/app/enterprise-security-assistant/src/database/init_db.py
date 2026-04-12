@@ -66,8 +66,12 @@ async def create_tenant_sample():
                 status="active",
             )
             session.add(tenant)
+            await session.flush()  # 确保租户先创建
             
-            # 创建管理员用户
+            # 导入密码哈希工具
+            from ..services.auth_service import AuthService
+            
+            # 创建管理员用户（密码：admin123）
             admin_user = User(
                 user_id="U001",
                 tenant_id="T001",
@@ -76,10 +80,11 @@ async def create_tenant_sample():
                 role="super_admin",
                 permissions=["query", "analyze", "config", "manage", "audit"],
                 is_active=True,
+                password_hash=AuthService.hash_password("admin123"),
             )
             session.add(admin_user)
             
-            # 创建安全分析师用户
+            # 创建安全分析师用户（密码：analyst123）
             analyst_user = User(
                 user_id="U002",
                 tenant_id="T001",
@@ -88,10 +93,11 @@ async def create_tenant_sample():
                 role="security_analyst",
                 permissions=["query", "analyze"],
                 is_active=True,
+                password_hash=AuthService.hash_password("analyst123"),
             )
             session.add(analyst_user)
             
-            # 创建只读用户
+            # 创建只读用户（密码：readonly123）
             readonly_user = User(
                 user_id="U003",
                 tenant_id="T001",
@@ -100,6 +106,7 @@ async def create_tenant_sample():
                 role="read_only",
                 permissions=["query"],
                 is_active=True,
+                password_hash=AuthService.hash_password("readonly123"),
             )
             session.add(readonly_user)
             

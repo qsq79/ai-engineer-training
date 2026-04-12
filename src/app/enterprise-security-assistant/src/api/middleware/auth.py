@@ -58,29 +58,43 @@ class AuthMiddleware:
             "/docs",
             "/redoc",
             "/openapi.json",
-            # API端点（开发模式无需认证）
-            "/api/v1/query",
-            "/api/v1/agents/list",
-            "/api/v1/agents/execute",
-            "/api/v1/workflows/list",
-            "/api/v1/workflows/execute",
-            "/api/v1/sessions",
-            "/api/v1/compliance",
-            "/api/v1/stats",
-            "/api/v1/admin",
+            # 静态资源
+            "/static",
+            "/favicon.ico",
+            "/apple-touch-icon.png",
+            "/apple-touch-icon-precomposed.png",
+            # 认证接口（公开）
+            "/api/v1/auth/register",
+            "/api/v1/auth/login",
+            "/api/v1/auth/refresh",
         ]
         
-        # 检查是否是以API开头的路径（所有API都跳过认证）
-        if request.url.path.startswith("/api/"):
+        # 跳过静态文件（所有/static路径）
+        if request.url.path.startswith("/static"):
             return await call_next(request)
         
-        # 跳过静态文件
-        if request.url.path.startswith("/static"):
+        # 跳过favicon等图标文件
+        if request.url.path in ["/favicon.ico", "/apple-touch-icon.png", "/apple-touch-icon-precomposed.png"]:
             return await call_next(request)
         
         # 跳过公共端点
         if request.url.path in public_paths:
             return await call_next(request)
+        
+        # 开发模式下，API无需认证（方便调试）
+        if settings.debug and request.url.path.startswith("/api/"):
+            # 开发模式：所有API公开（方便调试）
+            return await call_next(request)
+        
+        # 生产模式：API需要认证（排除认证接口本身）
+        if request.url.path.startswith("/api/") and not request.url.path.startswith("/api/v1/auth/"):
+            # 非认证接口需要认证
+            pass  # 继续执行下面的Token验证
+        elif request.url.path.startswith("/api/v1/auth/"):
+            # /login, /register, /refresh 公开，/me 需要认证
+            if request.url.path in ["/api/v1/auth/login", "/api/v1/auth/register", "/api/v1/auth/refresh"]:
+                return await call_next(request)
+            # /me 需要认证，继续执行
         
         # 跳过OPTIONS请求（CORS预检）
         if request.method == "OPTIONS":
